@@ -54,7 +54,7 @@ GEM
     bootstrap-will_paginate (1.0.0)
       will_paginate
     builder (3.2.3)
-    byebug (9.0.6)
+    byebug (9.1.0)
     capybara (2.16.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -305,10 +305,16 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    parallel (1.12.0)
     pg (0.18.4)
     pry (0.11.1)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    pry-byebug (3.5.0)
+      byebug (~> 9.1)
+      pry (~> 0.10)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     public_suffix (3.0.1)
     puma (3.9.1)
     rack (2.0.3)
@@ -350,6 +356,19 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.5)
       trollop (~> 2.1)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.0)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.0)
     ruby-progressbar (1.9.0)
     rubyzip (1.2.1)
     sass (3.5.1)
@@ -391,6 +410,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    watir (6.10.0)
+      selenium-webdriver (~> 3.4, >= 3.4.1)
     web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -411,7 +432,6 @@ DEPENDENCIES
   bcrypt (= 3.1.11)
   bootstrap-sass (= 3.3.7)
   bootstrap-will_paginate (= 1.0.0)
-  byebug (= 9.0.6)
   capybara (~> 2.13)
   carrierwave (= 1.1.0)
   coffee-rails (= 4.2.2)
@@ -426,10 +446,15 @@ DEPENDENCIES
   listen (= 3.0.8)
   mini_magick (= 4.7.0)
   minitest-reporters (= 1.1.14)
+  parallel
   pg (= 0.18.4)
+  pry
+  pry-byebug
+  pry-rails
   puma (= 3.9.1)
   rails (= 5.1.2)
   rails-controller-testing (= 1.0.2)
+  rspec
   sass-rails (= 5.0.6)
   selenium-webdriver
   spring (= 2.0.2)
@@ -438,6 +463,7 @@ DEPENDENCIES
   turbolinks (= 5.0.1)
   tzinfo-data
   uglifier (= 3.2.0)
+  watir
   web-console (= 3.5.1)
   will_paginate (= 3.1.5)
 

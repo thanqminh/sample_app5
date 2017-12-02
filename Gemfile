@@ -19,12 +19,9 @@ gem 'jbuilder',     '2.7.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
-  gem 'byebug',  '9.0.6', platform: :mri
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
-  gem 'cucumber-rails', :require => false
-  # database_cleaner is not required, but highly recommended
-  gem 'database_cleaner'
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -39,6 +36,14 @@ group :test do
   gem 'minitest-reporters',       '1.1.14'
   gem 'guard',                    '2.13.0'
   gem 'guard-minitest',           '2.4.4'
+  gem 'rspec'
+  gem 'parallel'
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+  gem 'watir'
 end
 
 group :production do
